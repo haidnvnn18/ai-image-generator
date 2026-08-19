@@ -1,0 +1,9 @@
+-r requirements-common.txt
+# Use the CUDA build, not PyPI's CPU-only Windows torch wheel.
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.13.0+cu126
+diffusers
+transformers
+accelerate
+safetensors
+bitsandbytes
